@@ -3,6 +3,7 @@ import main
 from PIL import Image
 import genderanalysis
 import ageanalysis
+
 st.title("Do you think you would've survived the Titanic?")
 st.write("""
 ## Please enter your information""")
@@ -37,16 +38,16 @@ if btn:
         st.write("Unfortunately, you would not have survived, sorry :(")
 
         if sexN == 0:
-            image = Image.open('images/sadrose.jpg')
+            image = Image.open('C:/Users/Asus/PycharmProjects/TitanicPredictionWebsite/DidYouSurvive/images/sadrose.jpg')
         else:
-            image = Image.open('images/jack.jpg')
+            image = Image.open('C:/Users/Asus/PycharmProjects/TitanicPredictionWebsite/DidYouSurvive/images/jack.jpg')
         st.image(image, use_column_width=True)
     else:
         st.write("You are a lucky one, congrats!")
         if sexN == 0:
-            image = Image.open('images/rose.png')
+            image = Image.open('C:/Users/Asus/PycharmProjects/TitanicPredictionWebsite/DidYouSurvive/images/rose.png')
         else:
-            image = Image.open('images/happyjack.jpg')
+            image = Image.open('C:/Users/Asus/PycharmProjects/TitanicPredictionWebsite/DidYouSurvive/images/happyjack.jpg')
 
         st.image(image, use_column_width=True)
 
@@ -63,5 +64,8 @@ st.write("Around 70% of the passengers embarked in Southampton, and more than 50
 st.write("We can also see that the average age of the passengers in 1st class was around 40, and in 3rd class around 20 years of age.")
 
 st.markdown('<hr style="border-top: 10px solid #000000;"/>', unsafe_allow_html=True)
-st.write("Thank you for taking the interest to look at my work!")
-st.markdown("The code for this project is available on my  <a href="https://www.w3schools.com">GitHub</a> ")
+st.write("Thank you for the interest to look at my work!")
+
+link = 'The code for this project is available on my [GitHub.](https://github.com/StankovskiA/DidYouSurviveTheTitanic)'
+st.markdown(link, unsafe_allow_html=True)
+st.markdown('<hr style="border-top: 10px solid #000000;"/>', unsafe_allow_html=True)

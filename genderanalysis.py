@@ -1,10 +1,9 @@
 import pandas as pd
 import matplotlib.pyplot as plt
-import scipy.stats
 
 female_color = "#FA0000"
 
-df = pd.read_csv("titanic/train.csv")
+df = pd.read_csv("C:/Users/Asus/PycharmProjects/TitanicPredictionWebsite/DidYouSurvive/titanic/train.csv")
 fig = plt.figure(figsize=(18, 6))
 
 plt.subplot2grid((3, 4), (0, 0))
@@ -40,5 +39,3 @@ plt.title("Rich Women Survived")
 plt.subplot2grid((3, 4), (2,3))
 df.Survived[(df.Sex == "female") & (df.Pclass == 3)].value_counts(normalize=True).plot(kind="bar", alpha=0.5, color=female_color)
 plt.title("Poor Women Survived")
-
-plt.show()

@@ -1,8 +1,7 @@
 import pandas as pd
 import matplotlib.pyplot as plt
-import scipy.stats
 
-df = pd.read_csv("titanic/train.csv")
+df = pd.read_csv("C:/Users/Asus/PycharmProjects/TitanicPredictionWebsite/DidYouSurvive/titanic/train.csv")
 fig = plt.figure(figsize=(18, 6))
 
 plt.subplot2grid((2, 3), (0, 0))
@@ -26,5 +25,3 @@ plt.legend(("1st", "2nd", "3rd"))
 plt.subplot2grid((2, 3), (1, 2))
 df.Embarked.value_counts(normalize=True).plot(kind="bar", alpha=0.5)
 plt.title("Embarked")
-
-plt.show()
