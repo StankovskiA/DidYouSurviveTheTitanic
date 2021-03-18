@@ -1,7 +1,7 @@
 import pandas as pd
 import matplotlib.pyplot as plt
 
-df = pd.read_csv("C:/Users/Asus/PycharmProjects/TitanicPredictionWebsite/DidYouSurvive/titanic/train.csv")
+df = pd.read_csv("titanic/train.csv")
 fig = plt.figure(figsize=(18, 6))
 
 plt.subplot2grid((2, 3), (0, 0))

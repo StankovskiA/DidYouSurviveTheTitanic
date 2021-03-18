@@ -39,16 +39,16 @@ if btn:
         st.write("Unfortunately, you would not have survived, sorry :(")
 
         if sexN == 0:
-            image = Image.open('C:/Users/Asus/PycharmProjects/TitanicPredictionWebsite/DidYouSurvive/images/sadrose.jpg')
+            image = Image.open('images/sadrose.jpg')
         else:
-            image = Image.open('C:/Users/Asus/PycharmProjects/TitanicPredictionWebsite/DidYouSurvive/images/jack.jpg')
+            image = Image.open('images/jack.jpg')
         st.image(image, use_column_width=True)
     else:
         st.write("You are a lucky one, congrats!")
         if sexN == 0:
-            image = Image.open('C:/Users/Asus/PycharmProjects/TitanicPredictionWebsite/DidYouSurvive/images/rose.png')
+            image = Image.open('images/rose.png')
         else:
-            image = Image.open('C:/Users/Asus/PycharmProjects/TitanicPredictionWebsite/DidYouSurvive/images/happyjack.jpg')
+            image = Image.open('images/happyjack.jpg')
 
         st.image(image, use_column_width=True)
 
