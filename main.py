@@ -2,7 +2,7 @@ import pandas as pd
 from sklearn.preprocessing import LabelEncoder
 from sklearn import tree
 
-df = pd.read_csv("C:/Users/Asus/PycharmProjects/TitanicPredictionWebsite/DidYouSurvive/titanic/train.csv", index_col=0)
+df = pd.read_csv("C:\\Users\\Asus\\PycharmProjects\\TitanicPredictionWebsite\\DidYouSurvive\\titanic\\train.csv", index_col=0)
 target = df['Survived']
 df.drop('Survived', axis='columns', inplace=True)
 
@@ -21,7 +21,7 @@ df['Age'] = df['Age'].fillna(30)
 model = tree.DecisionTreeClassifier()
 model.fit(df, target)
 
-tdf= pd.read_csv("C:/Users/Asus/PycharmProjects/TitanicPredictionWebsite/DidYouSurvive/titanic/train.csv", index_col=0)
+tdf= pd.read_csv("C:\\Users\\Asus\\PycharmProjects\\TitanicPredictionWebsite\\DidYouSurvive\\titanic\\train.csv", index_col=0)
 tdf['Age'] = tdf['Age'].fillna(30)
 tdf['sex'] = le_sex.fit_transform(tdf['Sex'])
 tdf['embarked'] = le_embarked.fit_transform(tdf['Embarked'])
