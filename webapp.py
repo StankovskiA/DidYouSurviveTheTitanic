@@ -1,5 +1,6 @@
 import streamlit as st
 import main
+import sklearn
 from PIL import Image
 import genderanalysis
 import ageanalysis
